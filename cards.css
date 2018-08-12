@@ -1,0 +1,227 @@
+div{
+   
+    text-align: center;
+}
+img{
+    padding: 0 0.5%;
+    max-width: 6.5%;
+}
+
+table{
+    border: 2px blue solid;
+    max-height: 25%;
+    text-align: left;
+
+}
+body{
+    background-color: gray;
+}
+
+.clear-img{
+    opacity: 0.1;
+}
+.container{
+    text-align: center;
+    border: 2px solid black;
+    max-height: 100%;
+}
+.container-top{
+    text-align: left;
+    background-color: black;
+    color: aqua;
+
+}
+input{
+    font-size: 10pt;
+    text-align: center;
+    max-width: 50%;
+}
+.input{
+    float: right;
+   
+}
+label{
+    max-width: 49%;
+    font-size: 1em;
+}
+
+#menucard{
+    max-width: 100%;
+    display: inline
+}
+#resetTable{
+    text-align: center;
+    float: inherit;
+    padding-left: 20%;
+}
+.BlackJack{
+    text-align: center;
+}
+#grid{
+    display: grid;
+    grid-column: 1fr 2fr 1fr;
+    grid-row: 2fr 1fr 2fr;
+}
+#grid00{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: black;
+}
+.container1{
+    height: 80%;
+    width: 100%;
+}
+.gamestats{
+    margin-top: 25%;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: black;
+    color: antiquewhite;
+
+}
+#end{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+button:hover{
+    background-color: blueviolet;
+}
+img:hover{
+    background-color: aqua;
+}
+#start{
+    margin-left: 2%;
+    margin-top: 20%;
+    height: 1.5em;
+    width: 4em;
+    background-color: rgb(66, 85, 85);
+    border: rgb(66, 85, 85) solid;
+    border-radius: 5%;
+    color: 
+
+}
+#start:hover{
+    background-color: blueviolet;
+    border: blueviolet solid;
+
+
+}
+#check{
+    margin-left: 2%;
+    height: 1.5em;
+    width: 4em;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.square{
+    background-color: rgb(51, 51, 78);
+    width: 10%;
+    height: 20%;
+    max-width: 10%;
+    max-height: 20%;
+    color: whitesmoke;
+    
+    float: right;
+    margin: 1.6% 9%;
+    border-radius: 8%;
+}
+.square:hover{
+    background-color: rgb(100, 98, 98);
+}
+p{
+    font-size: 14pt;
+    margin-top: 50%;
+    color: whitesmoke;
+    font-family: fantasy;
+    
+}
+#container{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height:100%;
+    border-collapse:collapse;
+    display : table;
+    /* max-height: 100%;
+    
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative; */
+}
+
+div{
+    text-align: center;
+}
+body{
+    background-color: rgb( 23, 23, 23);
+    display: grid;
+    grid-template-rows:  2fr 7fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
+    height: 100%;
+    margin: 0;
+}
+h4{
+    font-size: 1.25em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+label{
+    color: whitesmoke;
+    font-size: 14pt;
+}
+input{
+    background-color: rgb(28, 160, 149);
+    color: aliceblue;
+    font-family: fantasy;
+}
+#containerHead{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#bottom{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: greenyellow;
+    width: 0%;
+    padding-bottom: 5%;
+    
+}
+#left-bottom{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#tracker{
+    display : table-row;
+    vertical-align : bottom;
+    height : 1px;
+}
+button{
+    border: black solid;
+    border-radius: 5%;
+    background-color: black;
+    color: whitesmoke;
+
+}
+button:hover{
+    background-color: rgb(92, 92, 92)
+}
+.bt{
+    background-color: aqua;
+    border: aqua solid 2px;
+    border-radius: 5%;
+}
