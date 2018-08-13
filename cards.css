@@ -21,11 +21,19 @@ body{
     opacity: 0.1;
 }
 .container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
     text-align: center;
     border: 2px solid black;
     max-height: 100%;
 }
 .container-top{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: left;
     background-color: black;
     color: aqua;
@@ -94,8 +102,6 @@ img:hover{
     background-color: aqua;
 }
 #start{
-    margin-left: 2%;
-    margin-top: 20%;
     height: 1.5em;
     width: 4em;
     background-color: rgb(66, 85, 85);
@@ -135,16 +141,16 @@ h1{
 .square:hover{
     background-color: rgb(100, 98, 98);
 }
-p{
-    font-size: 14pt;
-    margin-top: 50%;
+th{
+    font-size: 12pt;
+    
     color: whitesmoke;
     font-family: fantasy;
     
 }
 #container{
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
     height:100%;
@@ -165,7 +171,7 @@ body{
     display: grid;
     grid-template-rows:  2fr 7fr 1fr;
     grid-template-columns: 1fr 8fr 1fr;
-    height: 100%;
+    height: 99%;
     margin: 0;
 }
 h4{
@@ -191,12 +197,13 @@ input{
 }
 #bottom{
     grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
     background-color: greenyellow;
-    width: 0%;
+    height: 0%;
     padding-bottom: 5%;
+    
     
 }
 #left-bottom{
@@ -208,7 +215,6 @@ input{
 #tracker{
     display : table-row;
     vertical-align : bottom;
-    height : 1px;
 }
 button{
     border: black solid;
