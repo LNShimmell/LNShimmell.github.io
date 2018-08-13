@@ -42,6 +42,7 @@ table{
     text-align: left;
     background-color: black;
     color: aqua;
+    font-size: 2vh;
 
 }
 input{
@@ -110,6 +111,7 @@ button:hover{
     background-color: rgb(66, 85, 85);
     border: rgb(66, 85, 85) solid;
     border-radius: 5%;
+    margin-left: 5%;
 
 
 }
@@ -129,12 +131,12 @@ h1{
     width: 10%;
     height: 20%;
     max-width: 10%;
-    min-height: 30%;
+    min-height: 39%;
     color: whitesmoke;
-    font-size: 2vh;
+    font-size: 4vh;
     
     float: right;
-    margin: 1.6% 9%;
+    margin: 1% 9%;
     border-radius: 8%;
 }
 
@@ -166,7 +168,7 @@ div{
 body{
     background-color: rgb( 23, 23, 23);
     display: grid;
-    grid-template-rows:  1fr 11fr 3fr;
+    grid-template-rows:  20fr 75fr 5fr;
     grid-template-columns: 1fr 11fr 1fr;
     min-height: 100%;
     margin: 0;
@@ -231,4 +233,5 @@ button{
     background-color: aqua;
     border: aqua solid 2px;
     border-radius: 5%;
+    
 }
