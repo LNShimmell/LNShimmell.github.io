@@ -102,24 +102,17 @@ label{
 button:hover{
     background-color: blueviolet;
 }
-img:hover{
-    background-color: aqua;
-}
+
 #start{
     height: 1.5em;
     width: 4em;
     background-color: rgb(66, 85, 85);
     border: rgb(66, 85, 85) solid;
     border-radius: 5%;
-    color: 
-
-}
-#start:hover{
-    background-color: blueviolet;
-    border: blueviolet solid;
 
 
 }
+
 #check{
     margin-left: 2%;
     height: 1.5em;
@@ -135,16 +128,15 @@ h1{
     width: 10%;
     height: 20%;
     max-width: 10%;
-    max-height: 20%;
+    min-height: 30%;
     color: whitesmoke;
+    font-size: 2vh;
     
     float: right;
     margin: 1.6% 9%;
     border-radius: 8%;
 }
-.square:hover{
-    background-color: rgb(100, 98, 98);
-}
+
 th{
     font-size: 12pt;
     
@@ -232,9 +224,7 @@ button{
     color: whitesmoke;
 
 }
-button:hover{
-    background-color: rgb(92, 92, 92)
-}
+
 .bt{
     background-color: aqua;
     border: aqua solid 2px;
