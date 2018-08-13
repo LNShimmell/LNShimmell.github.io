@@ -166,7 +166,7 @@ div{
 body{
     background-color: rgb( 23, 23, 23);
     display: grid;
-    grid-template-rows:  2fr 10fr 1fr;
+    grid-template-rows:  2fr 11fr 3fr;
     grid-template-columns: 1fr 11fr 1fr;
     min-height: 100%;
     margin: 0;
