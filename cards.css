@@ -1,11 +1,7 @@
 
 html{
     min-height: 100%;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    
 }
 div{
    
@@ -14,6 +10,7 @@ div{
 img{
     padding: 0 0.5%;
     max-width: 6.5%;
+    max-height:5%;
 }
 
 table{
@@ -32,7 +29,7 @@ table{
     grid-row-end: 3;
     text-align: center;
     border: 2px solid black;
-    max-height: 100%;
+    max-height: 95%;
 }
 .container-top{
     grid-column-start: 1;
@@ -133,7 +130,7 @@ h1{
     max-width: 10%;
     min-height: 39%;
     color: whitesmoke;
-    font-size: 4vh;
+    font-size: 3vh;
     
     float: right;
     margin: 1% 9%;
@@ -152,7 +149,7 @@ th{
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    height:100%;
+    max-height:100%;
     border-collapse:collapse;
     display : table;
     /* max-height: 100%;
@@ -172,27 +169,26 @@ body{
     grid-template-columns: 1fr 11fr 1fr;
     min-height: 100%;
     margin: 0;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    
 }
 
 h4{
     font-size: 1.25em;
     text-align: center;
     color: whitesmoke;
+    margin:0 auto;
 }
 
 label{
     color: whitesmoke;
-    font-size: 14pt;
+    font-size: 12pt;
+    
 }
 input{
     background-color: rgb(28, 160, 149);
     color: aliceblue;
-    font-family: fantasy;
+    height: 0.75em;
+
 }
 #containerHead{
     grid-row-start: 1;
@@ -234,4 +230,10 @@ button{
     border: aqua solid 2px;
     border-radius: 5%;
     
+}
+select{
+    background-color: rgb(232, 245, 175);
+}
+checkbox{
+    background-color: rgb(232, 245, 175);
 }
