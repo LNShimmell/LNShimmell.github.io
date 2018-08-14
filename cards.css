@@ -121,6 +121,7 @@ button:hover{
 h1{
     text-align: center;
     color: whitesmoke;
+    margin: 0.5em auto 0.1em auto;
 }
 p{
    background-color: rgb(51, 51, 78)
