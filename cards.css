@@ -129,7 +129,6 @@ p{
 .square{
     
     width: 10%;
-    height: 20%;
     max-width: 10%;
     min-height: 39%;
     color: whitesmoke;
@@ -228,9 +227,9 @@ input{
     margin-top: 2px;
 }
 button{
-    border: black solid;
+    border: rgb(71, 61, 119) solid;
     border-radius: 5%;
-    background-color: black;
+    background-color: rgb(71, 61, 119);
     color: whitesmoke;
 
 }
