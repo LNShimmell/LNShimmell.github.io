@@ -1,6 +1,6 @@
 
 html{
-    min-height: 100%;
+    max-height: 100%;
     
 }
 div{
@@ -152,6 +152,7 @@ th{
     max-height:100%;
     border-collapse:collapse;
     display : table;
+    min-height: 75%;
     /* max-height: 100%;
     
     max-width: 100%;
@@ -167,8 +168,11 @@ body{
     display: grid;
     grid-template-rows:  20fr 75fr 5fr;
     grid-template-columns: 1fr 11fr 1fr;
-    min-height: 100%;
+    min-height: 0;
+    min-width: 0;
+    max-height: 100%;
     margin: 0;
+    position: absolute;
     
 }
 
@@ -176,7 +180,7 @@ h4{
     font-size: 1.25em;
     text-align: center;
     color: whitesmoke;
-    margin:0 auto;
+    margin:0 auto 2px auto;
 }
 
 label{
@@ -201,7 +205,7 @@ input{
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: greenyellow;
+    background-color: black;
     height: 0%;
     padding-bottom: 5%;
     
