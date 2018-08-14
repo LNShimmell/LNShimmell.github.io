@@ -225,6 +225,7 @@ input{
 #tracker{
     display : table-row;
     vertical-align : bottom;
+    margin-top: 2px;
 }
 button{
     border: black solid;
