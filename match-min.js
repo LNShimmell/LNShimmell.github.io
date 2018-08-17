@@ -751,6 +751,7 @@ function shuffle(Deck) {
   }
   return Deck;
 }
+
 function compareAnswer(number) {
   var myAnswer = document.getElementById(number).value;
   if (myAnswer == goal) {
@@ -763,7 +764,7 @@ function compareAnswer(number) {
     score += 10 * mathbonus * mathlevel * (mathdifficulty / 3);
     mathbonus++;
     document.getElementById("score").value = score;
-    percent += 20;
+    percent += 25;
     document.getElementById("bottom").style.height = percent + "%";
     if (percent >= 100) {
       mathlevel++;
@@ -798,6 +799,7 @@ function compareAnswer(number) {
       return;
     }
     percent -= 10 + mathlevel * 0.25;
+    console.log(`Wrong -${10 + mathlevel * 0.25}%`);
     document.getElementById("bottom").style.height = percent + "%";
   }
 }
