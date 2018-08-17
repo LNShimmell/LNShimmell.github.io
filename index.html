@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Match</title>
+    <title>Three-n-One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="cards.css" />
+
+
+
     <script src="match-min.js"></script>
 </head>
+
 <body id="clear" class="fullscreen">
-        <div style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3;">
-    <table style="width: 100%;">
-        <th>Match</th>
-  
-        <tr>
-            <!-- <td>
+    <div style="grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3;">
+        <table style="width: 100%;" class="tbl">
+            <th>Match</th>
+
+            <tr>
+                <!-- <td>
                 Select Difficulty
             </td> -->
-            <td><select hidden name="Difficulty" id="fDifficulty">
-                <option type="number" value="1">Hard</option>
-               <!-- <option type="number" value="1">Easy</option>-->
-            </select></td>
-        </tr>
-        <tr><td>
-            <button class="btn btn-sm" onclick="createNewGame()" type="submit">Play</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="Cards/aces.png" id="menucard" alt="guess" width="100px">
-            </td>
-        </tr>
-        
-    </table>
-    
-    <table style="width: 100%;">
-        <tr>
-            <th>
-                Memory
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <button class="btn btn-sm btn-success" onclick="startMemory()">Play</button>
-            </td>
-        </tr>
-    </table>
-   
-    <table style="width: 100%;">
-        <tr>
-            <th>
-                MathLand
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <Button class="btn btn-sm btn-success" onclick="startmathland()"> Play</Button>
-            </td>
-        </tr>
-    </table>
-   
+                <td>
+                    <select hidden name="Difficulty" id="fDifficulty">
+                        <option type="number" value="1">Hard</option>
+                        <!-- <option type="number" value="1">Easy</option>-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-sm" onclick="createNewGame()" type="submit">Play</button>
+                    <div class="rules"> Rules: You have 10 seconds to memorize as many cards as possible. The objective is to match all the cards!
+                        Once all the cards on the table have been matched the game is over. *note: There is more than one
+                        way to achieve score multipliers!</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- <img src="Cards/aces.png" class="menucard" alt="guess" width="100px"> -->
+                </td>
+            </tr>
+
+        </table>
+
+        <table style="width: 100%;" class="tbl">
+            <tr>
+                <th>
+                    Copy-Kat
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-sm btn-success" onclick="startMemory()">Play</button>
+                    <div class="rules">Rules: Simple once the timer expires the computer will flip cards in a random sequence. Once the computer
+                        is done, it's your job to copy the computer's moves.</div>
+                </td>
+            </tr>
+        </table>
+
+        <table style="width: 100%;" class="tbl">
+            <tr>
+                <th>
+                    MathLand
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <Button class="btn btn-sm btn-success" onclick="startmathland()"> Play</Button>
+                    <div class="rules"> Rules: Chose a difficulty, then a subject to study. The game goes forever unless you check the time attack
+                        mode. Difficulty progression is not linear! You have been warned! Good luck!
+                    </div>
+                </td>
+            </tr>
+        </table>
+
     </div>
 </body>
+
 </html>
