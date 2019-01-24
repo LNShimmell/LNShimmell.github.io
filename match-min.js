@@ -816,3 +816,66 @@ function mathgameOver() {
   row += '<button onclick="document.location.reload()">New Game</button>';
   container.innerHTML = row;
 }
+
+
+function decryptPII(){
+  var args = document.getElementById("EncryptedText");
+  args = args.value;
+  if(args.length<25){
+    console.log("args")
+    return;
+  }
+  if(typeof(args)=="string"){
+    var array = [];
+    array.push(args);
+    args = array;
+  }
+  var attributes = [];
+  args.forEach((arg)=>{
+      var attribute = arg.split('-');
+      attributes.push(attribute);
+
+  });
+  
+  var answer = [];
+  attributes.forEach((item)=>{
+      var word = "";
+      for(var i = 0; i< item.length; i++){
+          var code = parseInt(item[i], 16);
+          var char= '';
+          if(i%11 == 0){
+              code /=2;
+              char = String.fromCharCode(code);
+          }
+          else if(i%2==0){
+              if(code<91){
+                  char = String.fromCharCode((code+5));
+              }else{
+                  char = String.fromCharCode((code-13));
+              }
+          }
+          else if(i%3 == 0 && code>109){
+              
+              char = String.fromCharCode((code-9));
+          }
+          else if(i%3!=0){
+              if(i%3==1){
+                  char = String.fromCharCode((code-13));
+              }
+              else{
+                  char = String.fromCharCode((code-19));
+              }
+          }
+          else{
+              char = String.fromCharCode(code);
+          }
+          word+=char;
+      }
+      answer.push(word);
+
+  })
+  var msg = document.getElementById("decryptedText");
+  msg.innerText = answer[0];
+  console.log(answer[0])
+  return answer;
+}
